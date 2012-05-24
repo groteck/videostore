@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @film.name
+%p
+  %b Curret count:
+  = @film.curret_count
+%p
+  %b Rented count:
+  = @film.rented_count
+%p
+  %b Total count:
+  = @film.total_count
+%p
+  %b Day price:
+  = @film.day_price
+
+= link_to 'Edit', edit_film_path(@film)
+\|
+= link_to 'Back', films_path

@@ -1,0 +1,27 @@
+%h1 Listing films
+
+%table
+  %tr
+    %th Name
+    %th Curret count
+    %th Rented count
+    %th Total count
+    %th Day price
+    %th
+    %th
+    %th
+
+  - @films.each do |film|
+    %tr
+      %td= film.name
+      %td= film.curret_count
+      %td= film.rented_count
+      %td= film.total_count
+      %td= film.day_price
+      %td= link_to 'Show', film
+      %td= link_to 'Edit', edit_film_path(film)
+      %td= link_to 'Destroy', film, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Film', new_film_path

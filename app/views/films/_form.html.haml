@@ -1,0 +1,12 @@
+= simple_form_for(@film) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :curret_count
+    = f.input :rented_count
+    = f.input :total_count
+    = f.input :day_price
+
+  .form-actions
+    = f.button :submit

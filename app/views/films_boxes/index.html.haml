@@ -1,0 +1,25 @@
+%h1 Listing films_boxes
+
+%table
+  %tr
+    %th Rent
+    %th Film
+    %th User
+    %th Rented
+    %th
+    %th
+    %th
+
+  - @films_boxes.each do |films_box|
+    %tr
+      %td= films_box.rent_id
+      %td= films_box.film_id
+      %td= films_box.user_id
+      %td= films_box.rented
+      %td= link_to 'Show', films_box
+      %td= link_to 'Edit', edit_films_box_path(films_box)
+      %td= link_to 'Destroy', films_box, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Films box', new_films_box_path

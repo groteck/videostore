@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  curret_count: 1
+  rented_count: 1
+  total_count: 1
+  day_price: 9.99
+
+two:
+  name: MyString
+  curret_count: 1
+  rented_count: 1
+  total_count: 1
+  day_price: 9.99

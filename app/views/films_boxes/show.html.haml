@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Rent:
+  = @films_box.rent_id
+%p
+  %b Film:
+  = @films_box.film_id
+%p
+  %b User:
+  = @films_box.user_id
+%p
+  %b Rented:
+  = @films_box.rented
+
+= link_to 'Edit', edit_films_box_path(@films_box)
+\|
+= link_to 'Back', films_boxes_path

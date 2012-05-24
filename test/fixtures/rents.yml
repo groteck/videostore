@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  films_box_id: 1
+  start_day: 2012-05-24 03:51:30
+  end_day: 2012-05-24 03:51:30
+
+two:
+  user_id: 1
+  films_box_id: 1
+  start_day: 2012-05-24 03:51:30
+  end_day: 2012-05-24 03:51:30

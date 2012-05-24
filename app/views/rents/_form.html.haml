@@ -1,0 +1,11 @@
+= simple_form_for(@rent) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :user_id
+    = f.input :films_box_id
+    = f.input :start_day
+    = f.input :end_day
+
+  .form-actions
+    = f.button :submit

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @rent.user_id
+%p
+  %b Films box:
+  = @rent.films_box_id
+%p
+  %b Start day:
+  = @rent.start_day
+%p
+  %b End day:
+  = @rent.end_day
+
+= link_to 'Edit', edit_rent_path(@rent)
+\|
+= link_to 'Back', rents_path

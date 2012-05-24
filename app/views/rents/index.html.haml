@@ -1,0 +1,25 @@
+%h1 Listing rents
+
+%table
+  %tr
+    %th User
+    %th Films box
+    %th Start day
+    %th End day
+    %th
+    %th
+    %th
+
+  - @rents.each do |rent|
+    %tr
+      %td= rent.user_id
+      %td= rent.films_box_id
+      %td= rent.start_day
+      %td= rent.end_day
+      %td= link_to 'Show', rent
+      %td= link_to 'Edit', edit_rent_path(rent)
+      %td= link_to 'Destroy', rent, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Rent', new_rent_path
